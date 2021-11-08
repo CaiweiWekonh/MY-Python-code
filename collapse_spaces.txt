@@ -1,0 +1,2 @@
+         Hello      world!
+many        spaces     on      the      line.
