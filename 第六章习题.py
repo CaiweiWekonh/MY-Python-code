@@ -132,7 +132,30 @@ def word_warp8(filename):
     with open (filename,"w")as file7:
         file7.write(linetxt_ss)
 
-word_warp8("flip_line.txt")
+#word_warp8("flip_line.txt")
+
+#Test 10
+def coin_flip(filename):
+    with open (filename) as file10:
+        for line in file10.readlines():
+            count=head=0
+            for result in line:
+                if result.lower()=='h':
+                    head+=1
+                    count+=1
+                elif result.lower()=='t':
+                    count+=1
+                else:continue
+            print("%dHeads(%f)."%(head,head/count))
+            if head/count>0.5:
+                print("You win!")
+                print()
+
+coin_flip("coin_flip.txt")
+print()
+                    
+                
+    
 
                 
             
