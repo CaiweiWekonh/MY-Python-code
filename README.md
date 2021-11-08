@@ -1,2 +1,0 @@
-# WEKONH
-My own code.
