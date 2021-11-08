@@ -154,7 +154,41 @@ def coin_flip(filename):
 coin_flip("coin_flip.txt")
 print()
                     
-                
+#Test12
+def plus_scores(filename):
+    with open (filename) as file12:
+        i=1
+        for line in file12.readlines():
+            plus=count=0
+            if i%2==1:
+                print(line,end=":")
+            else:
+                for letter in line:
+                     if letter=="+":
+                        plus+=1
+                        count+=1
+                     elif letter=="-":
+                         count+=1
+                print("%f%%plus."%(100*plus/count))
+            i+=1
+
+plus_scores("plus_scores.txt")
+print()
+
+#Program 4
+def write_a_story():
+    filename=str(input("Input filename."))+".txt"
+    adjective=str(input("Please enter an adjective."))
+    pl_noun=str(input("Please enter a plural noun."))
+    noun=str(input("Please enter a noun"))
+    adjective2=str(input("Please enter an adjective."))
+    place=str(input("Please enter a place"))
+    with open (filename,"w") as file:
+        file.write("One of the most %s characters in fiction is named \"Tarzan of %s\".\
+Tarzan was raised by a/an %s and lives in the %s jungle in the heart of darkest %s."%(adjective,pl_noun,noun,adjective2,place))
+    with open (filename,"r")as file:
+        print(file.read())
+write_a_story()    
     
 
                 
