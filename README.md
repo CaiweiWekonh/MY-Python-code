@@ -1,2 +1,2 @@
 # WEKONH
-My own code.
+My own python code.
